@@ -1,0 +1,14 @@
+/* 초기화 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Nanum Brush Script", cursive;
+}
