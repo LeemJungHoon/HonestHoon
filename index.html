@@ -30,7 +30,7 @@
         align-items: center;
         text-align: center;
         position: relative;
-        animation: mask 1.2s 1 linear forwards;
+        animation: mask 4s 1 linear forwards;
       }
 
       /* .banner h2::after {
@@ -47,39 +47,71 @@
 
       @keyframes mask {
         0% {
-          transform: translateX(-100px);
+          transform: translateY(-200px);
           /* transform: translateY(-100px); */
         }
 
         100% {
-          transform: translateX(0px);
+          transform: translateY(80px);
           /* transform: translateY(0px); */
         }
       }
 
-      .banner .banner-myIntro {
+      .banner .myIntroduce {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin-top: 7%;
         font-size: 48px;
+        position: relative;
+      }
+
+      .banner .myIntroduce .content {
+        position: absolute;
+        top: 0;
       }
     </style>
+    <script>
+      window.onload = () => {
+        myIntroContentSwap();
+      };
+
+      const myIntroContentSwap = () => {
+        for (let i = 1; i < 11; i++) {
+          new Promise((resolve, reject) => {
+            setTimeout(() => {
+              document.querySelector(`.myIntroduce .content:nth-child(${i})`).style.opacity = 1;
+              resolve(0);
+            }, i * 300);
+          })
+            .then((value) => {
+              setTimeout(() => {
+                document.querySelector(`.myIntroduce .content:nth-child(${i})`).style.opacity = value;
+              }, 300);
+            })
+            .catch((err) => {
+              console.log("myIntroContentSwap에러" + err);
+            });
+        }
+      };
+    </script>
   </head>
   <body>
     <div class="wrap">
       <div class="banner">
         <h2>Leem Jung Hoon</h2>
-        <div class="banner-myIntro">
-          <span>1994.11.26</span>
-          <span>남자</span>
-          <span>INTP</span>
-          <span>군필(만기전역)</span>
-          <span>음악취향 : 랩</span>
-          <span>아재개그</span>
-          <span>Web Front-End Developer</span>
-          <span>ㅇㅇ사의 준비된 신입</span>
+        <div class="myIntroduce">
+          <div class="content" style="opacity: 0">1994.11.26</div>
+          <div class="content" style="opacity: 0">남자</div>
+          <div class="content" style="opacity: 0">서일대졸업</div>
+          <div class="content" style="opacity: 0">군필(병 만기전역)</div>
+          <div class="content" style="opacity: 0">영화 lover</div>
+          <div class="content" style="opacity: 0">인생업적 마빵단</div>
+          <div class="content" style="opacity: 0">INTP</div>
+          <div class="content" style="opacity: 0">랩 좋아함</div>
+          <div class="content" style="opacity: 0">Web Front-End Developer</div>
+          <div class="content" style="opacity: 0">삼성의 준비된 신입</div>
         </div>
       </div>
     </div>
