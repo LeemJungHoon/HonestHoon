@@ -16,13 +16,13 @@
         flex-direction: column;
       }
 
-      .banner {
+      .top-container {
         display: flex;
         flex-direction: column;
+        height: 60vh;
         margin: 17% auto;
-        height: 100vh;
       }
-      .banner h2 {
+      .top-container h2 {
         font-size: 128px;
         display: flex;
         justify-content: center;
@@ -40,7 +40,7 @@
           transform: translateY(80px);
         }
       }
-      .banner .myIntroduce {
+      .top-container .myIntroduce {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -49,7 +49,7 @@
         font-size: 48px;
         position: relative;
       }
-      .banner .myIntroduce .content {
+      .top-container .myIntroduce .content {
         position: absolute;
         top: 0;
       }
@@ -58,8 +58,7 @@
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 120vh;
-        margin: 50px auto;
+        margin: 0px auto;
       }
       .middle-container div {
         width: 100%;
@@ -103,6 +102,31 @@
       .middle-container div ul li {
         font-size: 24px;
       }
+
+      .bottom-container {
+        width: 100%;
+        height: 100vh;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .bottom-container span {
+        color: black;
+        font-size: 128px;
+      }
+      .bottom-container span a {
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
+        font-size: 42px;
+        border: 3px dotted gray;
+        border-radius: 30%;
+      }
+      .bottom-container span a:hover {
+        color: aqua;
+        border: 3px dotted aqua;
+      }
     </style>
     <script>
       window.onload = () => {
@@ -134,8 +158,8 @@
   </head>
   <body>
     <div class="wrap">
-      <div class="banner">
-        <h2>Leem Jung Hoon</h2>
+      <div class="top-container">
+        <span><h2>부에에에에에에에에엥</h2></span>
         <div class="myIntroduce">
           <div class="content" style="opacity: 0">1994.11.26</div>
           <div class="content" style="opacity: 0">남자</div>
@@ -189,6 +213,10 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="bottom-container">
+        <span><p>감사합니다</p></span>
+        <span><a href="#top">Top</a></span>
       </div>
     </div>
   </body>
