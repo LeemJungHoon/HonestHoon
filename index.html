@@ -78,22 +78,24 @@
       };
 
       const myIntroContentSwap = () => {
-        for (let i = 1; i < 11; i++) {
+        const content = document.querySelectorAll(`.myIntroduce .content`);
+
+        content.forEach((item, idx) => {
           new Promise((resolve, reject) => {
             setTimeout(() => {
-              document.querySelector(`.myIntroduce .content:nth-child(${i})`).style.opacity = 1;
+              item.style.opacity = 1;
               resolve(0);
-            }, i * 300);
+            }, idx * 300);
           })
             .then((value) => {
               setTimeout(() => {
-                document.querySelector(`.myIntroduce .content:nth-child(${i})`).style.opacity = value;
+                item.style.opacity = 0;
               }, 300);
             })
             .catch((err) => {
-              console.log("myIntroContentSwap에러" + err);
+              console.log("myIntroContentSwap에러 :" + err);
             });
-        }
+        });
       };
     </script>
   </head>
