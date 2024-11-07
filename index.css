@@ -12,3 +12,7 @@ a {
 body {
   font-family: "Nanum Brush Script", cursive;
 }
+
+li {
+  list-style: none;
+}

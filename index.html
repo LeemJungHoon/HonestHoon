@@ -22,7 +22,6 @@
         margin: 17% auto;
         height: 100vh;
       }
-
       .banner h2 {
         font-size: 128px;
         display: flex;
@@ -32,31 +31,15 @@
         position: relative;
         animation: mask 4s 1 linear forwards;
       }
-
-      /* .banner h2::after {
-        background: white;
-        width: 100%;
-        height: 100%;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        
-      } */
-
       @keyframes mask {
         0% {
           transform: translateY(-200px);
-          /* transform: translateY(-100px); */
         }
 
         100% {
           transform: translateY(80px);
-          /* transform: translateY(0px); */
         }
       }
-
       .banner .myIntroduce {
         display: flex;
         justify-content: center;
@@ -66,10 +49,59 @@
         font-size: 48px;
         position: relative;
       }
-
       .banner .myIntroduce .content {
         position: absolute;
         top: 0;
+      }
+
+      .middle-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 120vh;
+        margin: 50px auto;
+      }
+      .middle-container div {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        border: 3px dotted wheat;
+        border-radius: 1px 50px 1px 50px;
+        margin-bottom: 80px;
+        background: white;
+        position: sticky;
+        top: 100px;
+      }
+      .middle-container div span {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .middle-container div span img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 20px;
+      }
+      .middle-container div ul {
+        width: 50%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+      }
+      .middle-container div ul li {
+        font-size: 42px;
+        text-align: center;
+        margin: 20px;
+      }
+      .middle-container div ul li {
+        font-size: 32px;
+      }
+      .middle-container div ul li {
+        font-size: 24px;
       }
     </style>
     <script>
@@ -77,6 +109,7 @@
         myIntroContentSwap();
       };
 
+      // 배너 이름 밑에 글자 바꿔주는 기능
       const myIntroContentSwap = () => {
         const content = document.querySelectorAll(`.myIntroduce .content`);
 
@@ -114,6 +147,47 @@
           <div class="content" style="opacity: 0">랩 좋아함</div>
           <div class="content" style="opacity: 0">Web Front-End Developer</div>
           <div class="content" style="opacity: 0">삼성의 준비된 신입</div>
+        </div>
+      </div>
+      <div class="middle-container">
+        <div>
+          <span><img src="./imgs/장원영.jpg" /></span>
+          <ul>
+            <li>ㅇㅇㅇ 프로젝트</li>
+            <li>소제목</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              voluptates maxime quibusdam repellendus fugit facilis praesentium
+              et alias, quidem vero, dolorum ducimus vitae, quo itaque mollitia
+              quaerat dolore totam pariatur.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>ㅇㅇㅇ 프로젝트</li>
+            <li>소제목</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              voluptates maxime quibusdam repellendus fugit facilis praesentium
+              et alias, quidem vero, dolorum ducimus vitae, quo itaque mollitia
+              quaerat dolore totam pariatur.
+            </li>
+          </ul>
+          <span><img src="./imgs/차은우.jpg" /></span>
+        </div>
+        <div>
+          <span><img src="./imgs/아이린.jpg" /></span>
+          <ul>
+            <li>ㅇㅇㅇ 프로젝트</li>
+            <li>소제목</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              voluptates maxime quibusdam repellendus fugit facilis praesentium
+              et alias, quidem vero, dolorum ducimus vitae, quo itaque mollitia
+              quaerat dolore totam pariatur.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
