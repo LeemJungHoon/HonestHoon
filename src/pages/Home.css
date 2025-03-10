@@ -1,0 +1,160 @@
+/* 초기화 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Nanum Brush Script", cursive;
+}
+
+li {
+  list-style: none;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  background: #fff6f6;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  margin: 17% auto;
+}
+.top-container h2 {
+  font-size: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  animation: mask 5s 1 linear forwards;
+}
+@keyframes mask {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  60% {
+    transform: translateY(80px);
+  }
+  80% {
+    transform: translateY(80px);
+  }
+
+  100% {
+    transform: translateY(50px);
+  }
+}
+.top-container .myIntroduce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 7%;
+  font-size: 48px;
+  position: relative;
+}
+.top-container .myIntroduce .content {
+  position: absolute;
+  top: 0;
+}
+.top-container .myIntroduce .arrowDirection {
+  opacity: 0;
+  animation: arrowDirection infinite 1s linear;
+}
+@keyframes arrowDirection {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0px auto;
+}
+.middle-container .outerDiv {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  border: 3px dotted wheat;
+  border-radius: 1px 50px 1px 50px;
+  margin-bottom: 80px;
+  background: white;
+  position: sticky;
+  top: 100px;
+}
+.middle-container .outerDiv span {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle-container .outerDiv span img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+.middle-container div ul {
+  width: 50%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.middle-container div ul li {
+  font-size: 42px;
+  text-align: center;
+  margin: 20px;
+}
+.middle-container div ul li {
+  font-size: 32px;
+}
+.middle-container div ul li {
+  font-size: 24px;
+}
+
+.bottom-container {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-container span {
+  color: black;
+  font-size: 128px;
+}
+.bottom-container span a {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  font-size: 42px;
+  border: 3px dotted gray;
+  border-radius: 30%;
+}
+.bottom-container span a:hover {
+  color: aqua;
+  border: 3px dotted aqua;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%; /* 부모 요소의 높이를 따르도록 */
+}
