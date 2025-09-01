@@ -55,13 +55,13 @@ const Home = () => {
               컴퓨터소프트웨어학
             </div>
             <div className="content" style={{ opacity: 0 }}>
-              병 만기전역
+              react-query
             </div>
             <div className="content" style={{ opacity: 0 }}>
               MBTI : INTP
             </div>
             <div className="content" style={{ opacity: 0 }}>
-              HTML/CSS
+              Next.js
             </div>
             <div className="content" style={{ opacity: 0 }}>
               JavaScript
