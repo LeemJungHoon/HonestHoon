@@ -45,7 +45,7 @@ const Home = () => {
       <div className="wrap">
         <div className="top-container">
           <span>
-            <h2>FE개발자 임정훈입니다</h2>
+            <h2>FE개발자 .......test</h2>
           </span>
           <div className="myIntroduce">
             <div className="content" style={{ opacity: 0 }}>
@@ -55,13 +55,13 @@ const Home = () => {
               컴퓨터소프트웨어학
             </div>
             <div className="content" style={{ opacity: 0 }}>
-              react-query
+              ....
             </div>
             <div className="content" style={{ opacity: 0 }}>
               MBTI : INTP
             </div>
             <div className="content" style={{ opacity: 0 }}>
-              Next.js
+              HTML/CSS
             </div>
             <div className="content" style={{ opacity: 0 }}>
               JavaScript
