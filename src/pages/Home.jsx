@@ -61,7 +61,7 @@ const Home = () => {
               MBTI : INTP
             </div>
             <div className="content" style={{ opacity: 0 }}>
-              HTML/CSS
+              Next.js
             </div>
             <div className="content" style={{ opacity: 0 }}>
               JavaScript
@@ -73,7 +73,7 @@ const Home = () => {
               TypeScript
             </div>
             <div className="content" style={{ opacity: 0 }}>
-              MUI / Styled-Component
+              MUI / Styled-Component / Tailwind
             </div>
             <div className="content" style={{ opacity: 0 }}>
               Web Front-End Developer
