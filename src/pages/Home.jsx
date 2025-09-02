@@ -104,16 +104,10 @@ const Home = () => {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <img
-                    src="https://github.com/pado0711/DokProject-backend/assets/109504714/2a2afef3-db1f-4b19-90c9-3cbf35611ca6"
-                    loading="lazy"
-                  />
+                  <img src="https://github.com/pado0711/DokProject-backend/assets/109504714/2a2afef3-db1f-4b19-90c9-3cbf35611ca6" loading="lazy" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    src="https://github.com/pado0711/DokProject-backend/assets/109504714/cc470c38-27e8-4b12-a20d-0ca46a1f297d"
-                    loading="lazy"
-                  />
+                  <img src="https://github.com/pado0711/DokProject-backend/assets/109504714/cc470c38-27e8-4b12-a20d-0ca46a1f297d" loading="lazy" />
                 </SwiperSlide>
               </Swiper>
             </span>
@@ -121,10 +115,7 @@ const Home = () => {
               <li>DOK 프로젝트</li>
               <li>로그인 , 회원가입 기능 구현</li>
               <li>
-                <p>
-                  회원가입 폼의 입력 값이 조건에 안 맞을 시 즉시 사용자에게
-                  알려줍니다.{" "}
-                </p>
+                <p>회원가입 폼의 입력 값이 조건에 안 맞을 시 즉시 사용자에게 알려줍니다. </p>
                 <p>제출 시 회원가입 정보가 암호화되어 DB에 저장됩니다.</p>
               </li>
             </ul>
@@ -137,10 +128,7 @@ const Home = () => {
               </li>
               <li>
                 <p>마이페이지에서 각 카테고리 클릭 시</p>
-                <p>
-                  프로필 조회, 추가, 수정, 작성글 조회등이 가능하게
-                  구현하였습니다.
-                </p>
+                <p>프로필 조회, 추가, 수정, 작성글 조회등이 가능하게 구현하였습니다.</p>
               </li>
             </ul>
             <span>
@@ -161,28 +149,16 @@ const Home = () => {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <img
-                    src="https://github.com/pado0711/DokProject-backend/assets/109504714/7e192b8e-511e-44ac-82ad-0db2a8b22636"
-                    loading="lazy"
-                  />
+                  <img src="https://github.com/pado0711/DokProject-backend/assets/109504714/7e192b8e-511e-44ac-82ad-0db2a8b22636" loading="lazy" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    src="https://github.com/pado0711/DokProject-backend/assets/109504714/3d2d79a4-a7f4-4eb7-a176-41ac59fc7284"
-                    loading="lazy"
-                  />
+                  <img src="https://github.com/pado0711/DokProject-backend/assets/109504714/3d2d79a4-a7f4-4eb7-a176-41ac59fc7284" loading="lazy" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    src="https://github.com/pado0711/DokProject-backend/assets/109504714/98975b35-f3f4-4f9c-a5af-5eae293d3efe"
-                    loading="lazy"
-                  />
+                  <img src="https://github.com/pado0711/DokProject-backend/assets/109504714/98975b35-f3f4-4f9c-a5af-5eae293d3efe" loading="lazy" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    src="https://github.com/pado0711/DokProject-backend/assets/109504714/b9449c0a-ab36-4b3c-aae4-65e22a116c9f"
-                    loading="lazy"
-                  />
+                  <img src="https://github.com/pado0711/DokProject-backend/assets/109504714/b9449c0a-ab36-4b3c-aae4-65e22a116c9f" loading="lazy" />
                 </SwiperSlide>
               </Swiper>
             </span>
@@ -206,38 +182,17 @@ const Home = () => {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <video
-                    controls
-                    width="100%"
-                    height="auto"
-                    autoPlay
-                    loop
-                    muted
-                  >
+                  <video controls width="100%" height="auto" autoPlay loop muted>
                     <source src="./PandaFlower/주문하기.mp4" type="video/mp4" />
                   </video>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <video
-                    controls
-                    width="100%"
-                    height="auto"
-                    autoPlay
-                    loop
-                    muted
-                  >
+                  <video controls width="100%" height="auto" autoPlay loop muted>
                     <source src="./PandaFlower/장바구니.mp4" type="video/mp4" />
                   </video>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <video
-                    controls
-                    width="100%"
-                    height="auto"
-                    autoPlay
-                    loop
-                    muted
-                  >
+                  <video controls width="100%" height="auto" autoPlay loop muted>
                     <source src="./PandaFlower/검색기능.mp4" type="video/mp4" />
                   </video>
                 </SwiperSlide>
