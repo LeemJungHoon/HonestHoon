@@ -249,6 +249,86 @@ const Home = () => {
               </li>
             </ul>
           </div>
+          <div className="outerDiv">
+            <span>
+              <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                loop={true}
+                lazy={true}
+                autoplay={{
+                  // delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <video
+                    controls
+                    width="100%"
+                    height="auto"
+                    autoPlay
+                    loop
+                    muted
+                  >
+                    {/* <source src="./PandaFlower/검색기능.mp4" type="video/mp4" /> */}
+                  </video>
+                </SwiperSlide>
+              </Swiper>
+            </span>
+            <ul>
+              <li>영화 추천 사이트</li>
+              <li>날씨 연동, 영화 추천</li>
+              <li>
+                <p>차후 수정 필요</p>
+              </li>
+            </ul>
+          </div>
+          <div className="outerDiv">
+            <span>
+              <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                loop={true}
+                lazy={true}
+                autoplay={{
+                  // delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <video
+                    controls
+                    width="100%"
+                    height="auto"
+                    autoPlay
+                    loop
+                    muted
+                  >
+                    {/* <source src="./PandaFlower/검색기능.mp4" type="video/mp4" /> */}
+                  </video>
+                </SwiperSlide>
+              </Swiper>
+            </span>
+            <ul>
+              <li>수학 기초학력자 및 선생님을 위한 사이트</li>
+              <li>자동 문제 생성, 단원 평가, 학습 현황 시각화 등</li>
+              <li>
+                <p>차후 수정 필요</p>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="bottom-container">
           <span>
