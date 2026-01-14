@@ -45,7 +45,7 @@ const Home = () => {
       <div className="wrap">
         <div className="top-container">
           <span>
-            <h2>FE개발자 .......test</h2>
+            <h2>FE개발자 ...</h2>
           </span>
           <div className="myIntroduce">
             <div className="content" style={{ opacity: 0 }}>
